@@ -1,0 +1,353 @@
+{
+  "info": {
+    "_postman_id": "b3d5d186-45ea-489e-82f3-b4c7cb3b0ca4",
+    "name": "Express-ORM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "32002401"
+  },
+  "item": [
+    {
+      "name": "http://localhost:5555/auth/register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"nguyenquangtruong1@gmail.com\",\r\n    \"mat_khau\":\"123123\",\r\n    \"ho_ten\":\"Nguyen Quang Truong\",\r\n    \"tuoi\":19,\r\n    \"anh_dai_dien\":\"nguyenquangtruong.png\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5555/auth/register",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["auth", "register"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/auth/login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"nguyenquangtruong1@gmail.com\",\r\n    \"mat_khau\":\"123123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5555/auth/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["auth", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/image/get-list-image",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5555/image/get-list-image",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["image", "get-list-image"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/image/get-list-image/Hinh5.jpg",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5555/image/get-list-image/Hinh5.jpg",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["image", "get-list-image", "Hinh5.jpg"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/image/get-information-saveImage/5",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5555/image/get-information-saveImage/5",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["image", "get-information-saveImage", "5"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/user/get-information-user",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "connection": true,
+          "accept-encoding": true,
+          "accept": true,
+          "user-agent": true,
+          "host": true
+        }
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibmd1eWVucXVhbmd0cnVvbmcxQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiMTIzMTIzIn0sImlhdCI6MTcwNzIzMjAwNSwiZXhwIjoxNzM4Nzg5NjA1fQ.wnF52xt-TByEeASAgECK_AGXa7_TZZSNvxMJic0XYlY",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5555/user/get-information-user",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["user", "get-information-user"],
+          "query": [
+            {
+              "key": "",
+              "value": "",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/user/get-list-saveImage",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "connection": true,
+          "accept-encoding": true,
+          "accept": true,
+          "user-agent": true,
+          "host": true
+        }
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibmd1eWVucXVhbmd0cnVvbmcxQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiMTIzMTIzIn0sImlhdCI6MTcwNzIzMjAwNSwiZXhwIjoxNzM4Nzg5NjA1fQ.wnF52xt-TByEeASAgECK_AGXa7_TZZSNvxMJic0XYlY",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5555/user/get-list-saveImage",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["user", "get-list-saveImage"],
+          "query": [
+            {
+              "key": "",
+              "value": "",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/user/get-list-createdImage/2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibmd1eWVucXVhbmd0cnVvbmcxQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiMTIzMTIzIn0sImlhdCI6MTcwNzIzMjAwNSwiZXhwIjoxNzM4Nzg5NjA1fQ.wnF52xt-TByEeASAgECK_AGXa7_TZZSNvxMJic0XYlY",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5555/user/get-list-createdImage/2",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["user", "get-list-createdImage", "2"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/user/delete-created-image/16",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "connection": true,
+          "accept-encoding": true,
+          "accept": true,
+          "user-agent": true
+        }
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibmd1eWVucXVhbmd0cnVvbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIxMjMxMjMifSwiaWF0IjoxNzA3MjAxNjI2LCJleHAiOjE3Mzg3NTkyMjZ9.7Zc41GfCFvBZpWLVJUM5WEf6Hxt-wIp9DvpGsf7DNnM",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5555/user/delete-created-image/4",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["user", "delete-created-image", "4"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/image/get-information-image/5",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5555/image/get-information-image/5",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["image", "get-information-image", "5"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/image/get-information-comment/6",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5555/image/get-information-comment/6",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["image", "get-information-comment", "6"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/image/post-information-comment",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibmd1eWVucXVhbmd0cnVvbmcxQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiMTIzMTIzIn0sImlhdCI6MTcwNzIzMjAwNSwiZXhwIjoxNzM4Nzg5NjA1fQ.wnF52xt-TByEeASAgECK_AGXa7_TZZSNvxMJic0XYlY",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"binh_luan_id\":16,\r\n    \"hinh_id\":16,\r\n    \"ngay_binh_luan\":\"02-04-2024\",\r\n    \"noi_dung\":\"QTrường Cmt nèeeeee\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5555/image/post-information-comment",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["image", "post-information-comment"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/user/post-image-user",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibmd1eWVucXVhbmd0cnVvbmcxQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiMTIzMTIzIn0sImlhdCI6MTcwNzIzMjAwNSwiZXhwIjoxNzM4Nzg5NjA1fQ.wnF52xt-TByEeASAgECK_AGXa7_TZZSNvxMJic0XYlY",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"hinh_id\":17,\r\n    \"ten_hinh\":\"testPostImageByUser\",\r\n    \"duong_dan\":\"/images/testPostImageByUser\",\r\n    \"mo_ta\":\"testPostImageByUser\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5555/user/post-image-user",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["user", "post-image-user"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5555/user/put-information-user/4",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoibmd1eWVucXVhbmd0cnVvbmcxQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiMTIzMTIzIn0sImlhdCI6MTcwNzIzMjAwNSwiZXhwIjoxNzM4Nzg5NjA1fQ.wnF52xt-TByEeASAgECK_AGXa7_TZZSNvxMJic0XYlY",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"mat_khau\":\"123123\",\r\n    \"ho_ten\":\"testPut\",\r\n    \"tuoi\":24,\r\n    \"anh_dai_dien\":\"nguyenquangtruongg.jpg\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5555/user/put-information-user/4",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5555",
+          "path": ["user", "put-information-user", "4"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
